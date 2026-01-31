@@ -1,1 +1,81 @@
-/* место для вашего кода */
+.header .container {
+ display: grid;
+ grid-template-columns: 1fr min-content 1fr;
+ align-items: center;
+ font-size: 18px;
+ font-weight: 400;
+ width: 100%;
+ padding: 0;
+ margin: 0;
+}
+.header__menu {
+ justify-self: start;
+}
+
+.header__links {
+ padding: 0;
+ margin: 0;
+ display: flex;
+ gap: 0;
+ font-size: 18px;
+ line-height: 18px;
+ align-items: center;
+ list-style: none;
+}
+
+.header__address {
+ font-style: normal;
+ display: flex;
+ flex-direction: column;
+ align-items: flex-start;
+ justify-self: end;
+ width: 240px;
+ font-size: 18px;
+ line-height: 24.3px; 
+}
+
+.header__logo-image {
+ display: block;
+ height: 100%;
+ width: 100%;
+ object-fit: contain;
+}
+
+.header__logo {
+ display: block;
+ width: 148px;
+ height: 105px;
+ justify-self: center;
+}
+
+.header {
+ padding: 92px 50px 96px 50px;
+}
+
+.header__link-item {
+ display: flex;
+ align-items: center;
+ list-style: none;
+ /*list-style-position: inside;*/
+}
+
+.header__link-item + .header__link-item::before {
+  content: "○";
+  display: inline-block;
+  margin: 0 13px;
+  font-size: 12px;
+  line-height: 1;
+  width: auto;
+  text-align: center;
+}
+
+.header__contact[href] {
+ display: inline-block;
+}
+
+.header__address a.header__contact {
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+  text-decoration-skip-ink: none;
+}
