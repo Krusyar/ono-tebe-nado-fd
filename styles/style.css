@@ -289,3 +289,56 @@ background-image: url(../images/card-lot-01.jpg);
 .lots__card-list-item {
   min-height: 596px;
 }
+
+.about {
+  display: grid;
+  grid-template-columns: 334px 1fr;
+  column-gap: 25px;
+  padding: 120px 24px 0;
+}
+
+.about__logo {
+  width: 240px;
+  height: 240px;
+  border-radius: 50%;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-self: center;
+  margin-top: 35px;
+}
+
+.about__logo-image {
+  width: 148px;
+  height: 114px;
+  object-fit: contain;
+}
+
+.about__column:last-child {
+padding-top: 140px;
+}
+
+.about__title {
+  margin: 0;
+  font-size: 40px;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 1;
+}
+
+.about__text {
+  margin-top: 101px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  max-width: 688px;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: left;
+  font-weight: 400;
+}
+
+.about__text p {
+  margin: 0;
+}
