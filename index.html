@@ -15,8 +15,9 @@
         <div class="container">
           <nav class="header__menu">
             <ul class="header__links">
-              <li class="header__link-item">
-                <a class="header__link header__link-active" href="#main">главная</a>
+              <li class="header__link-item header__link-item_no-bullit">
+                <a class="header__link header__link-active" href="#main"
+                  >главная</a>
               </li>
               <li class="header__link-item">
                 <a class="header__link" href="#lots">посмотреть лоты</a>
@@ -26,25 +27,24 @@
               </li>
             </ul>
           </nav>
-          <a class="header__logo" href="#main" aria-label="На главную">
+          <a class="header__logo" aria-label="На главную">
             <img
               class="header__logo-image"
               src="images/logo-black.svg"
               alt="Логотип «Оно тебе надо»"/>
           </a>
-          <address class="header__address">
-            <a class="header__contact" href="tel:+99995555555"
-              >+9 999 555 5555</a>
-            <a class="header__contact" href="mailto:info@sobaka.ge"
+          <address class="address header__address">
+            <a class="address__link" href="tel:+99995555555">+9 999 555 5555</a>
+            <a class="address__link" href="mailto:info@sobaka.ge"
               >info@sobaka.ge</a>
-            <p class="header__contact">
+            <p class="address__text">
               наб. Принсенграхт 263-<br />265, Амстердам
             </p>
           </address>
         </div>
       </header>
       <main class="main" id="main">
-        <section class="cover">
+        <section class="cover overlay">
           <div class="cover__overlay">
             <h1 class="cover__title">
               <span class="cover__title-word cover__title-word_left">оно</span>
@@ -55,15 +55,7 @@
             </h1>
             <div class="cover__description">
               <p class="cover__description-text">
-                <span class="cover__word">аукцион</span>
-                <span class="cover__word cover__word_spacing_narrow"
-                  >вещей,</span>
-                <span class="cover__word cover__word_spacing_wide">в</span>
-                <span class="cover__word cover__word_spacing_narrow"
-                  >которые</span>
-                <span class="cover__word">никто</span>
-                <span class="cover__word cover__word_spacing_narrow">не</span>
-                <span class="cover__word">верил</span>
+                аукцион вещей, в которые никто не верил
               </p>
               <button class="cover__button" type="button">
                 сделать ставку
@@ -76,7 +68,7 @@
           <ul class="lots__card-list">
             <li class="lots__card-list-item">
               <a class="card-link" href="lot.html">
-                <article class="card card_type_film">
+                <article class="card overlay card_type_film">
                   <h3 class="card__title">
                     фильм режиссёра, который бросил киношколу
                   </h3>
@@ -90,7 +82,7 @@
             </li>
             <li class="lots__card-list-item">
               <a class="card-link" href="lot.html">
-                <article class="card card_type_book">
+                <article class="card overlay card_type_book">
                   <h3 class="card__title">
                     книга, где описан один скучный день из жизни рекламного
                     агента
@@ -108,7 +100,7 @@
             </li>
             <li class="lots__card-list-item">
               <a class="card-link" href="lot.html">
-                <article class="card card_type_picture">
+                <article class="card overlay card_type_picture">
                   <h3 class="card__title">
                     картина, которую повторит даже 5-летний сын маминой подруги
                   </h3>
@@ -130,8 +122,7 @@
               <img
                 class="about__logo-image"
                 src="images/logo-white.svg"
-                alt="Логотип «Оно тебе надо»"
-              />
+                alt="Логотип «Оно тебе надо»"/>
             </div>
           </div>
           <div class="about__column">
@@ -158,15 +149,17 @@
         </section>
       </main>
       <footer class="footer">
-        <address class="footer__address">
-          <a class="footer__contact" href="tel:+99995555555">+9 999 555 5555</a>
-          <a class="footer__contact" href="mailto:info@sobaka.ge">info@sobaka.ge</a>
-          <p class="footer__contact">наб. Принсенграхт 263-265, Амстердам</p>
+        <address class="address footer__address">
+          <a class="address__link" href="tel:+99995555555">+9 999 555 5555</a>
+          <a class="address__link" href="mailto:info@sobaka.ge"
+            >info@sobaka.ge</a>
+          <p class="address__text">наб. Принсенграхт 263-265, Амстердам</p>
         </address>
         <nav class="footer__menu">
           <ul class="footer__menu-list">
             <li class="footer__menu-list-item">
-              <a class="footer__link footer__link-active" href="#main">главная</a >
+              <a class="footer__link footer__link-active" href="#main"
+                >главная</a>
             </li>
             <li class="footer__menu-list-item">
               <a class="footer__link" href="#lots">посмотреть лоты</a>
@@ -181,16 +174,18 @@
             <a
               class="footer__social"
               href="https://youtu.be/dQw4w9WgXcQ?si=yPraDuFbqo8QIyuD"
-            >
+              target="_blank">
               <img
                 class="footer__social-icon"
                 src="images/yt.svg"
-                alt="Youtube"
-              />
+                alt="Youtube"/>
             </a>
           </li>
           <li class="footer__social-list-item">
-            <a class="footer__social" href="https://vk.com/feed">
+            <a
+              class="footer__social"
+              href="https://vk.com/feed"
+              target="_blank">
               <img
                 class="footer__social-icon"
                 src="images/vk.svg"
@@ -199,12 +194,14 @@
             </a>
           </li>
           <li class="footer__social-list-item">
-            <a class="footer__social" href="https://ru.pinterest.com/">
+            <a
+              class="footer__social"
+              href="https://ru.pinterest.com/"
+              target="_blank">
               <img
                 class="footer__social-icon"
                 src="images/pinterest.svg"
-                alt="Pinterest"
-              />
+                alt="Pinterest"/>
             </a>
           </li>
         </ul>
