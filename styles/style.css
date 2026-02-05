@@ -76,7 +76,14 @@
 .header__address a.header__contact {
   text-decoration: underline;
   text-decoration-thickness: 1px;
-  text-underline-offset: 3px;
+  text-underline-offset: 4px;
+  text-decoration-skip-ink: none;
+}
+
+.header__link {
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 4px;
   text-decoration-skip-ink: none;
 }
 
@@ -185,4 +192,100 @@
 
 .cover__word_spacing_wide{
   margin-right: 18px;
+}
+
+.lots {
+  padding: 180px 24px 0;
+}
+
+.lots__heading {
+ margin: 0 0 27px;
+ font-size: 40px;
+ font-weight: 700;
+ text-transform: uppercase;
+ padding-left: 40px;
+}
+
+.lots__card-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.card {
+  height: 100%;
+  padding: 51px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  position: relative;
+}
+
+.card-link {
+  text-decoration: none;
+  display: block;
+  height: 100%;
+}
+
+.card__title {
+  margin: 0;
+  text-transform: uppercase;
+  text-decoration: underline;
+  font-size: 22px;
+  font-weight: 700;
+  position: relative;
+  z-index: 1;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 4px;
+  text-decoration-skip-ink: none;
+}
+
+.card__text {
+  margin: 0;
+  font-size: 20px;
+  line-height: 24px;
+  position: relative;
+  z-index: 1;
+}
+
+.card_type_film {
+background-image: url(../images/card-lot-01.jpg);
+}
+
+.card_type_book {
+ background-image: url(../images/card-lot-02.jpg); 
+}
+
+.card_type_picture {
+  background-image: url(../images/card-lot-03.jpg);
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 0;
+  pointer-events: none;
+}
+
+.lots__look-more-link {
+  display: inline-block;
+  margin-top: 30px;
+  font-size: 20px;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  text-decoration-skip-ink: none;
+  padding-left: 40px;
+}
+
+.lots__card-list-item {
+  min-height: 596px;
 }
